@@ -34,8 +34,7 @@ int main() {
     .CHECK_OUTPUT(a, "2[km]")
     .CHECK_OUTPUT(b, "300[m]")
 
-    .CHECK_OUTPUT(c, "2[hour]]")
-    .CHECK_OUTPUT(d, "30[min]")
+    
     .CHECK_OUTPUT(e, "2[km]")
     .CHECK_OUTPUT(f, "200[g]")
     .CHECK_OUTPUT(g, "1[ton]")
@@ -52,12 +51,12 @@ int main() {
     .CHECK_OUTPUT(d, "30[min]")
     .CHECK_OUTPUT(d+c, "150[min]")
 
-    .CHECK_OUTPUT(a==(a+b), true)
-    // .CHECK_OUTPUT()
-    // .CHECK_OUTPUT()
-    // .CHECK_OUTPUT()
-    // .CHECK_OUTPUT()
-    // .CHECK_OUTPUT()
+    //.CHECK_OUTPUT(a==(a+b), true)
+    .CHECK_OUTPUT(c+d, "2.3[hour]")
+    .CHECK_OUTPUT(e+f, "2.2 [kg]")
+    .CHECK_OUTPUT(f+e, "2200[g]")
+    //.CHECK_OUTPUT(i+=d, "1807[sec]")
+    .CHECK_OUTPUT(i, "1807[sec]")
     // .CHECK_OUTPUT()
     // .CHECK_OUTPUT()
     // .CHECK_OUTPUT()
