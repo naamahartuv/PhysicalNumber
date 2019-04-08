@@ -4,8 +4,10 @@ using namespace std;
 
 namespace ariel{
 
+    
     class PhysicalNumber{
 
+        public:
         double value;
         Unit type;
 
