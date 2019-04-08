@@ -53,23 +53,7 @@ int main() {
     .CHECK_OUTPUT(d+c, "150[min]")
 
     .CHECK_OUTPUT(a==(a+b), true)
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-    .CHECK_OUTPUT()
-
+    
 
 
 
