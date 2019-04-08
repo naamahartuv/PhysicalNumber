@@ -5,28 +5,28 @@
 using namespace ariel;
 
 PhysicalNumber PhysicalNumber::operator+   (const PhysicalNumber& a ) const{
-    return *this;
+    return NULL;
 } // +A
 PhysicalNumber PhysicalNumber::operator-   (const PhysicalNumber& a ) const{
-    return *this;
+    return NULL;
 }
 PhysicalNumber& PhysicalNumber::operator++  () {
-    return *this;
+    return NULL;
 }
 PhysicalNumber& PhysicalNumber::operator--  () {
-    return *this;
+    return NULL;
 }
 PhysicalNumber& PhysicalNumber::operator+=        (const PhysicalNumber& a ){
-    return *this;
+    return NULL;
 }
 PhysicalNumber PhysicalNumber::operator+() const {
-    return *this;
+    return NULL;
 } // +A
 PhysicalNumber& PhysicalNumber::operator-= (const PhysicalNumber& a ){
-    return *this;
+    return NULL;
 } // A = A-B
 PhysicalNumber PhysicalNumber::operator-() const {
-    return *this;
+    return NULL;
 } // -A
 
 
@@ -51,6 +51,13 @@ bool PhysicalNumber::operator!= (const PhysicalNumber a) const{
 
 
 std::ostream& ariel::operator<< (ostream& a, const PhysicalNumber& b){
-
+    
 }
-std::istream& ariel::operator>> (istream& a, const PhysicalNumber& b){} 
+std::istream& ariel::operator>> (istream& a, const PhysicalNumber& b){
+
+} 
+
+// int main(){
+//     cout << "hi";
+//     return 0;
+// }
