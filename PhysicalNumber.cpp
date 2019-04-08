@@ -4,23 +4,53 @@
 
 using namespace ariel;
 
-PhysicalNumber PhysicalNumber::operator+   (const PhysicalNumber& a ) const{} // +A
-PhysicalNumber PhysicalNumber::operator-   (const PhysicalNumber& a ) const{}
-PhysicalNumber& PhysicalNumber::operator++  () {}
-PhysicalNumber& PhysicalNumber::operator--  () {}
-PhysicalNumber& PhysicalNumber::operator+=        (const PhysicalNumber& a ){}
-PhysicalNumber PhysicalNumber::operator+() const {} // +A
-PhysicalNumber& PhysicalNumber::operator-=        (const PhysicalNumber& a ){} // A = A-B
-PhysicalNumber PhysicalNumber::operator-() const {} // -A
+PhysicalNumber PhysicalNumber::operator+   (const PhysicalNumber& a ) const{
+    return *this;
+} // +A
+PhysicalNumber PhysicalNumber::operator-   (const PhysicalNumber& a ) const{
+    return *this;
+}
+PhysicalNumber& PhysicalNumber::operator++  () {
+    return *this;
+}
+PhysicalNumber& PhysicalNumber::operator--  () {
+    return *this;
+}
+PhysicalNumber& PhysicalNumber::operator+=        (const PhysicalNumber& a ){
+    return *this;
+}
+PhysicalNumber PhysicalNumber::operator+() const {
+    return *this;
+} // +A
+PhysicalNumber& PhysicalNumber::operator-= (const PhysicalNumber& a ){
+    return *this;
+} // A = A-B
+PhysicalNumber PhysicalNumber::operator-() const {
+    return *this;
+} // -A
 
 
-bool PhysicalNumber::operator<  (const PhysicalNumber a) const{}
-bool PhysicalNumber::operator<= (const PhysicalNumber a)const{}
-bool PhysicalNumber::operator>= (const PhysicalNumber a)const{}
-bool PhysicalNumber::operator>  (const PhysicalNumber a)const{}
-bool PhysicalNumber::operator== (const PhysicalNumber a)const{}
-bool PhysicalNumber::operator!= (const PhysicalNumber a) const{}
+bool PhysicalNumber::operator<  (const PhysicalNumber a) const{
+    return false;
+}
+bool PhysicalNumber::operator<= (const PhysicalNumber a)const{
+    return false;
+}
+bool PhysicalNumber::operator>= (const PhysicalNumber a)const{
+    return false;
+}
+bool PhysicalNumber::operator>  (const PhysicalNumber a)const{
+    return false;
+}
+bool PhysicalNumber::operator== (const PhysicalNumber a)const{
+    return false;
+}
+bool PhysicalNumber::operator!= (const PhysicalNumber a) const{
+    return false;
+}
 
 
-std::ostream& ariel::operator<< (ostream& a, const PhysicalNumber& b){}
+std::ostream& ariel::operator<< (ostream& a, const PhysicalNumber& b){
+
+}
 std::istream& ariel::operator>> (istream& a, const PhysicalNumber& b){} 
